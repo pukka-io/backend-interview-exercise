@@ -1,0 +1,13 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/venv
+
+
+# misc
+.DS_Store
+**/__pycache__/
+
+
+# database
+# db.sqlite3
