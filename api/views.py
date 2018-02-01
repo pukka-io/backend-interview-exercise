@@ -65,9 +65,8 @@ class ConversationViewSet(GenericViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def create(self, request):
-        """
-            Api endpoint that create and save a new Conversation object
-        """
+        Conversation.objects.create(author_id=request.POST.get('author_id'), subject=request.POST.get('subject'))
+
         # TODO: Logic is missing
         return Response(status=status.HTTP_204_NO_CONTENT)
 
